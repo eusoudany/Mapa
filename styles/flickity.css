@@ -1,0 +1,80 @@
+/* external css: flickity.css */
+/* create carousel */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.carousel {
+    width: 100%;
+}
+
+.nosso__acervo__carousel .carousel {
+    max-width: 830px;
+    margin: auto;
+}
+
+.nosso__acervo__carousel .carousel-cell {
+    width: 90%;
+    max-width: 385px;
+    padding: 0;
+    margin-right: 10px;
+    /* background: rgb(136, 204, 136); */
+    border-radius: 40px;
+    display: flex;
+    overflow: hidden;
+}
+
+.carousel-cell-image {
+    display: block;
+    height: 505px;
+    width: 100%;
+    border-radius: 40px;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+.nossa-equipe .carousel {
+    max-width: 500px;
+    border-radius: 40px;
+}
+
+.nossa-equipe .carousel-cell {
+    width: 100%;
+    border-radius: 40px;
+    margin-right: 10px;
+}
+
+.nossa-equipe .carousel-cell img {
+    width: 100%;
+    border-radius: 40px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.nossa-equipe .carousel-cell-contain {
+    width: 100%;
+    height: 500px;
+    background-color: #ffffff;
+}
+
+.nossa-equipe .carousel-cell-contain img {
+    object-fit: contain;
+}
+
+.nossa-equipe .flickity-viewport {
+    border-radius: 40px;
+}
+
+@media (max-width: 768px) {
+    .nosso__acervo__carousel .flickity-prev-next-button {
+        display: none;
+    }
+}
+
+/* cell number */

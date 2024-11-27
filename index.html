@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!--FONTE-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700&family=Open+Sans:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <!--FIM FONTE-->
+
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles/home.css" />
+
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+        />
+        <link rel="stylesheet" href="./styles/flickity.css" />
+        <link rel="stylesheet" href="./styles/global.css" />
+
+        <script src="./scripts/global.js" defer></script>
+        <script src="./scripts/home.js" defer></script>
+        <script
+            src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"
+            defer
+        ></script>
+
+        <link
+            rel="shortcut icon"
+            href="./assets/favicon.ico"
+            type="image/x-icon"
+        />
+
+        <title>Mapa Cultural</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="conteudo-nav">
+              <a id="portal-logo" class="logo-mapa-cultural" href="#">
+                <img src="assets/logo-mapa-cultural.svg" alt="logo-mapa-cultural" />
+              </a>
+          
+              <nav>
+                <button class="mobile-menu">
+                  <div class="line1"></div>
+                  <div class="line2"></div>
+                  <div class="line3"></div>
+                </button>
+          
+
+
+
+                <ul class="nav-header">
+                  <li>
+                    <a href="index.html" class="home-link2 ancora-header">Home</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/cultura/acervo" class="acervo-link2 ancora-header">Acervo</a>
+                  </li>
+      
+                  <li>
+                    <a href="isise.html" class="isise-link2 ancora-header">Coletânea Isise</a>
+                  </li>
+      
+                  <li>
+                    <a href="equipe.html" class="equipe-link2 ancora-header">Equipe</a>
+                  </li>
+      
+                  <!-- Dropdown -->
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-link">Caminhos Culturais para Todos</a>
+                    <ul class="dropdown-menu">
+                        <ul class="dropdown-menu">
+                            <li><a href="videos-caminhos-culturais.html">Vídeos Caminhos Culturais</a></li>
+                            <li><a href="reels-com-audiodescricao.html">Reels com audiodescrição</a></li>
+                        </ul>
+                    </ul>
+                  </li>
+      
+                  <li>
+                    <a href="default.html" class="contato-link2 ancora-header">Contato</a>
+                  </li>
+      
+                  <li>
+                    <a class="mapa-link" href="http://umap.openstreetmap.fr/pt-pt/map/mapa-cultural_634062#15/-12.9613/-38.5019" target="_blank" class="ancora-header">Mapa</a>
+                  </li>
+                  
+                  
+          
+
+
+                  
+                  <li><div id="portal-searchbox"></div></li>
+                </ul>
+              </nav>
+            </div>
+          </header>
+
+
+        <main>
+            <section id="mapa" class="mapeamento__inteligente">
+                <div class="mapeamento__inteligente--container">
+                    <article class="mapeamento__inteligente--article">
+                        <h1>
+                            Mapeamento Cultural
+                            <span
+                                ><br />do entorno do IFBA Campus Salvador
+                            </span>
+                        </h1>
+                        <p>
+                            A fim de valorizar as atividades culturais do IFBA
+                            Campus Salvador e do seu entorno, visando fomentar
+                            políticas voltadas à cultura no Barbalho, na Lapinha
+                            e no Santo Antônio Além do Carmo, o projeto
+                            Mapeamento Cultural traz o mapa interativo com
+                            pontos de cultura da região.
+                        </p>
+                        <a href="http://u.osmfr.org/m/634062/" target="_blank">
+                            Acessar o Mapa
+                        </a>
+                    </article>
+                    <aside class="mapeamento__inteligente--aside">
+                        <iframe
+                            width="100%"
+                            height="300px"
+                            frameborder="0"
+                            allowfullscreen
+                            src="//umap.openstreetmap.fr/pt-br/map/mapa-cultural_634062?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false"
+                        ></iframe>
+                    </aside>
+                </div>
+                <img
+                    class="bg-line-top"
+                    src="./assets/background-lines/background-top-line.svg"
+                    alt=""
+                />
+            </section>
+
+            <section id="nosso-acervo" class="nosso__acervo__carousel">
+                <h2 class="section-title">Nosso acervo</h2>
+                <div
+                    class="carousel"
+                    data-flickity='{ 
+            "wrapAround": true, 
+            "prevNextButtons": true,
+            "pageDots": false,
+            "draggable": true
+          }'
+                >
+                    <div class="carousel-cell">
+                        <img
+                            class="carousel-cell-image"
+                            src="./assets/carousel-acervo/barbalho-carousel.png"
+                            alt="van"
+                        />
+                        <div class="carousel-description">
+                            <div>
+                                <h3>Barbalho</h3>
+                                <p>
+                                    O Bairro Barbalho tem sua origem na
+                                    necessidade de defesa territorial no século
+                                    XVII. O Forte do Barbalho, que existe até
+                                    hoje, passou por diversas transformações,
+                                    atualmente abriga um celeiro de produção
+                                    cultural que ressignifica seu espaço. No
+                                    Barbalho também se encontra o IFBA, Campus
+                                    Salvador, o ICEIA com seu belo teatro e
+                                    muitas construções históricas
+                                </p>
+                                <a id="first-link-carousel" href="/acervo"
+                                    >Veja o acervo</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <img
+                            class="carousel-cell-image"
+                            src="./assets/carousel-acervo/lapinha-carousel.png"
+                            alt="van"
+                        />
+                        <div class="carousel-description">
+                            <div>
+                                <h3>Lapinha</h3>
+                                <p>
+                                    O território da Lapinha é recheado de
+                                    memórias e identidades. As festas
+                                    tradicionais como a Festa de Reis e as
+                                    comemorações do Dois de Julho reforçam junto
+                                    com a arquitetura neoclássica uma atmosfera
+                                    que mantém viva as histórias de formação do
+                                    território e das populações de toda região
+                                    do centro antigo da Cidade.
+                                </p>
+                                <a id="second-link-carousel" href="/acervo"
+                                    >Veja o acervo</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <img
+                            class="carousel-cell-image"
+                            src="./assets/carousel-acervo/santo-antonio-carousel.png"
+                            alt="van"
+                        />
+                        <div class="carousel-description">
+                            <div>
+                                <h3>Santo Antônio</h3>
+                                <p>
+                                    O Bairro Santo Antônio Além do Carmo mantém
+                                    sua estética histórica por ser repleto de
+                                    casarões antigos e espaços culturais. A Rua
+                                    Direita constitui um caminho fascinante
+                                    entre o Largo, onde tem uma agradável praça
+                                    e uma bela vista para a Baía de Todos os
+                                    Santos, e a Cruz do Pascoal. O território
+                                    abriga muitas histórias que o Mapa Cultural
+                                    quer te mostrar.
+                                </p>
+                                <a id="third-link-carousel" href="/acervo"
+                                    >Veja o acervo</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img
+                    src="./assets/background-lines/background-mid-line.svg"
+                    alt=""
+                    class="bg-line-mid"
+                />
+            </section>
+
+            <section class="nosso-projeto" id="nosso-projeto">
+                <div class="interno-nosso-projeto-left">
+                    <div class="title">
+                        <h2 class="section-title">Nosso projeto</h2>
+                    </div>
+                    <article class="interno-nosso-projeto-article">
+                        <span>
+                            O Projeto Mapeamento Cultural do entorno do IFBA -
+                            Campus Salvador nasceu em 2020, com a finalidade
+                            principal de construir um mapa cultural do entorno
+                            do IFBA - Campus Salvador. A região inicialmente
+                            atendida pelo projeto engloba os Bairros Barbalho,
+                            Lapinha e Santo Antônio Além do Carmo. Entretanto,
+                            há intenção de futuramente ampliar o perímetro do
+                            mapa. O projeto constitui-se como uma pesquisa
+                            interdisciplinar, identificando lugares, sujeitos,
+                            histórias e memórias das regiões pesquisadas,
+                            partindo da necessidade de (re)conhecimento,
+                            valorização e planejamento de políticas a respeito
+                            da cultura tão significativa nessas localidades.
+                        </span>
+                    </article>
+                </div>
+                <div class="interno-nosso-projeto-right">
+                    <div class="interno-nosso-projeto-right-img">
+                        <img
+                            class="imagem-projeto"
+                            src="./assets/imagem-projeto-EXAMPLE.png"
+                            alt="imagem do projeto"
+                        />
+                        <img
+                            class="background-img-projeto"
+                            src="./assets/background-colors/background-imagem-projeto.svg"
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <section id="nossa-equipe" class="nossa-equipe">
+                <div
+                    class="carousel"
+                    data-flickity='{ "wrapAround": true, "pageDots": false, "autoPlay": true, "prevNextButtons": false, "pauseAutoPlayOnHover": false }'
+                >
+                    <div class="carousel-cell">
+                        <img
+                            src="./assets/carousel-equipe/catiane-rocha.jpg"
+                            alt="catiane rocha"
+                        />
+                    </div>
+                    <div class="carousel-cell">
+                        <img
+                            src="./assets/carousel-equipe/pablo-vieira.jpg"
+                            alt="pablo vieira"
+                        />
+                    </div>
+                    <div class="carousel-cell">
+                        <img
+                            src="./assets/carousel-equipe/marijane-de-oliveira.jpg"
+                            alt="marijane de oliveira"
+                        />
+                    </div>
+                    <div class="carousel-cell">
+                        <img
+                            src="./assets/carousel-equipe/solange-moura.jpg"
+                            alt="solange moura"
+                        />
+                    </div>
+                    <div class="carousel-cell">
+                        <img
+                            src="./assets/carousel-equipe/maria-lucileide.jpg"
+                            alt="maria lucileide"
+                        />
+                    </div>
+                    <div class="carousel-cell">
+                        <img
+                            src="./assets/carousel-equipe/nadson-silva.jpg"
+                            alt="nadson silva"
+                        />
+                    </div>
+                    <div class="carousel-cell">
+                        <img
+                            src="./assets/carousel-equipe/severin-menard.jpg"
+                            alt="séverin menard"
+                        />
+                    </div>
+                    <div class="carousel-cell">
+                        <img
+                            src="./assets/carousel-equipe/cassio-de-jesus.jpg"
+                            alt="cassio de jesus"
+                        />
+                    </div>
+                    <div class="carousel-cell">
+                        <img
+                            src="./assets/carousel-equipe/mirella-rodrigues.jpg"
+                            alt="mirella rodrigues"
+                        />
+                    </div>
+                    <div class="carousel-cell">
+                        <img
+                            src="./assets/carousel-equipe/jair_souza.png"
+                            alt="jair_souza"
+                            class="foto-membro"
+                        />
+                    </div>
+                    <div class="carousel-cell">
+                        <img
+                            src="./assets/carousel-equipe/evely_paranhos.png"
+                            alt="evely_paranhos"
+                            class="foto-membro"
+                        />
+                    </div>
+                    <div class="carousel-cell">
+                        <img
+                            src="./assets/carousel-equipe/leticia_rocha.png"
+                            alt="leticia_rocha"
+                            class="foto-membro"
+                        />
+                    </div>
+                    <div class="carousel-cell">
+                        <img
+                            src="./assets/carousel-equipe/julia_vitoria.png"
+                            alt="julia_vitoria"
+                            class="foto-membro"
+                        />
+                    </div>
+                    <div class="carousel-cell">
+                        <img
+                            src="./assets/carousel-equipe/celio_matheus.png"
+                            alt="celio_matheus"
+                            class="foto-membro"
+                        />
+                    </div>
+                    <div class="carousel-cell">
+                        <img
+                            src="./assets/carousel-equipe/produtora_junior.png"
+                            alt="logo produtora junior"
+                            class="foto-membro"
+                        />
+                    </div>
+                    <div class="carousel-cell">
+                        <img
+                            src="./assets/carousel-equipe/alinhavo.png"
+                            alt="logo da alinhavo"
+                        />
+                    </div>
+                    <div class="carousel-cell">
+                        <img
+                            class="logo-info"
+                            src="./assets/carousel-equipe/infojrufba.svg"
+                            alt="logo da infojúnior ufba"
+                        />
+                    </div>
+                    <div class="carousel-cell carousel-cell-contain">
+                        <img
+                            src="./assets/carousel-equipe/proex.png"
+                            alt="proex"
+                        />
+                    </div>
+                    <div class="carousel-cell carousel-cell-contain">
+                        <img
+                            src="./assets/carousel-equipe/prgpi.png"
+                            alt="prgpi"
+                        />
+                    </div>
+                    <div class="carousel-cell carousel-cell-contain">
+                        <img
+                            src="./assets/carousel-equipe/direc.png"
+                            alt="direc"
+                            class="direc"
+                        />
+                    </div>
+                    <div class="carousel-cell carousel-cell-contain">
+                        <p class="dgpi">
+                            <strong>DPGI IFBA - Campus Salvador</strong>
+                        </p>
+                    </div>
+                    <div class="carousel-cell carousel-cell-contain">
+                        <img
+                            src="./assets/carousel-equipe/fapesb.png"
+                            alt="fapesb"
+                            class="contain"
+                        />
+                    </div>
+                    <div class="carousel-cell carousel-cell-contain">
+                        <img
+                            src="./assets/carousel-equipe/CNPq.png"
+                            alt="CNPq"
+                            class="contain"
+                        />
+                    </div>
+                </div>
+                <div class="nossa-equipe-content">
+                    <h2 class="section-title">Nossa Equipe</h2>
+                    <p>
+                        O Projeto Mapeamento Cultural reúne uma equipe
+                        multidisciplinar com professores, pesquisadores,
+                        estudantes e profissionais de diversas áreas: Cultura,
+                        Linguagens, Informática, Geografia, História, Artes,
+                        Arquitetura, Desenho, Filosofia, dentre outras. Além de
+                        docentes, estudantes e egressos do IFBA Campus Salvador,
+                        na equipe há estudantes da UFBA e profissionais
+                        externos.
+                    </p>
+                        <br><br><br>
+                    <button class="btn-saiba-mais">
+                        <a href="equipe.html">Saiba mais</a>
+                    </button>
+                </div>
+
+                <img
+                    class="bg-img-equipe"
+                    src="./assets/background-colors/background-imagem-equipe.svg"
+                    alt=""
+                />
+                <img
+                    src="./assets/background-lines/background-bot-line.svg"
+                    alt=""
+                    class="bg-line-bot"
+                />
+            </section>
+        </main>
+        <div class="footer-section">
+            <section class="saiba-mais-footer">
+                <p>Veja todo conteúdo do projeto de forma interativa</p>
+                <a href="#">Acesse o Mapa</a>
+                <button class="btn-footer">
+                    <img src="./assets/arrow-up.svg" alt="arrow up" />
+                </button>
+            </section>
+            <footer>
+                <div class="conteudo-footer">
+                    <div class="elements-footer-left">
+                        <div class="logo-mapa-cultural-white">
+                            <img
+                                src="assets/logo-mapa-cultural-white.svg"
+                                alt="logo mapa cultural branco"
+                            />
+                        </div>
+                        <div class="logo-ifba">
+                            <a
+                                href="https://portal.ifba.edu.br/cultura"
+                                target="_blank"
+                            >
+                                <img
+                                    src="assets/logo-ifba.svg"
+                                    alt="logo ifba"
+                                />
+                            </a>
+                        </div>
+                        <div class="buttons-media">
+                            <a
+                                class="img-instagram"
+                                href="https://www.instagram.com/ifba_campus_salvador/"
+                                target="_blank"
+                            >
+                                <img
+                                    src="assets/instagram.svg"
+                                    alt="logo instagram"
+                                />
+                            </a>
+
+                            <a
+                                href="http://umap.openstreetmap.fr/pt-pt/map/mapa-cultural_634062#15/-12.9613/-38.5019"
+                                class="img-mapa"
+                            >
+                                <img
+                                    src="assets/placeholder.svg"
+                                    alt="logo mapa"
+                                />
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="elements-footer-right">
+                        <div class="nav-footer">
+              <nav>
+                <h2>Inicio</h2>
+                <ul>
+                  <li>
+                    <a class="home-link2-footer" href="/cultura"> Home </a>
+                  </li>
+                  <li>
+                    <a class="mapa-link2-footer" target="_blank" href="http://umap.openstreetmap.fr/pt-pt/map/mapa-cultural_634062#15/-12.9613/-38.5019"> Acesse o mapa </a>
+                  </li>
+                  <li>
+                    <a class="acervo-link2-footer" href="/cultura/acervo"> Nosso acervo </a>
+                  </li>
+                </ul>
+              </nav>
+              <nav>
+                <h2>Sobre nós</h2>
+                <ul>
+                  <li>
+                    <a class="equipe-link2-footer" href="/cultura/equipe"> Nossa equipe </a>
+                  </li>
+                  <li>
+                    <a class="contato-link2-footer" href="/cultura/contato">Contato</a>
+                  </li>
+                </ul>
+              </nav>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

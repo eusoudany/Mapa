@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!--FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700&family=Open+Sans:wght@400;700&display=swap"
+        rel="stylesheet"
+    />
+    <!--END FONT-->
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/posts.css" />
+    <link rel="stylesheet" href="./styles/default.css" />
+    <link rel="stylesheet" href="./styles/isise.css" />
+    
+    <link media="screen" href="styles/plone.css" type="text/css" rel="stylesheet" id="plone-css">
+    <link media="all" href="styles/main.css" type="text/css" rel="stylesheet" id="main-css">
+    <link media="all" href="styles/style.css" type="text/css" rel="stylesheet">
+
+    <script src="./scripts/global.js" defer></script>
+    <script src="./scripts/video.js" defer></script>
+
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <title>Mapa Cultural</title>
+
+    <style>
+     /* Estilos para as imagens na grid */
+     .projects-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;            /* Espaço entre as imagens */
+        justify-content: space-between;
+    }
+
+    /* Cada imagem ocupará 1/3 da largura do contêiner */
+    .project {
+        flex-basis: 32%;  /* 3 imagens por linha */
+        background-color: #f4f4f4; /* Cor de fundo do retângulo */
+        border-radius: 10px;
+        overflow: hidden;  /* Esconde qualquer parte que ultrapasse o contêiner */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Leve sombra */
+        transition: transform 0.3s ease;  /* Efeito de transição suave */
+        position: relative;
+    }
+
+    /* Efeito de hover nas imagens */
+    .project:hover {
+        transform: scale(1.05);  /* Levemente maior ao passar o mouse */
+    }
+
+    .project img {
+        width: 100%;    /* A imagem ocupa todo o contêiner */
+        height: auto;   /* Mantém a proporção da imagem */
+        object-fit: cover; /* Faz a imagem cobrir todo o espaço do contêiner */
+    }
+
+    /* Estilos para os botões abaixo das imagens */
+    .project button {
+        display: flex;
+        gap: 5px;  /* Espaço entre os botões */
+        justify-content: center;  /* Alinha os botões ao centro */
+        margin-top: 15px;
+        width: 100%;  /* Garante que o contêiner ocupe toda a largura disponível */
+        flex-wrap: wrap;  /* Permite que os botões se ajustem caso o espaço seja pequeno */
+    }
+
+    .close-btn {
+        padding: 10px 5px;
+        background-color: #ed7823;
+        color: white;
+        border-radius: 10px;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+        width: 180px;
+        text-align: center;
+        white-space: nowrap;
+        margin-top: 10px;
+    }
+
+    .close-btn:hover {
+        background-color: #8A397F;
+        transform: translateY(-3px);
+    }
+        
+        #video-container {
+            display: none; 
+            text-align: center; 
+            margin-top: 20px; 
+        }
+
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <div class="conteudo-nav">
+        <a id="portal-logo" class="logo-mapa-cultural" href="#">
+            <img src="assets/logo-mapa-cultural.svg" alt="logo-mapa-cultural" />
+        </a>
+
+        <nav>
+            <button class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </button>
+
+            <ul class="nav-header">
+                <li>
+                  <a href="index.html" class="home-link2 ancora-header">Home</a>
+                </li>
+                
+                <li>
+                  <a href="/cultura/acervo" class="acervo-link2 ancora-header">Acervo</a>
+                </li>
+    
+                <li>
+                  <a href="isise.html" class="isise-link2 ancora-header">Coletânea Isise</a>
+                </li>
+    
+                <li>
+                  <a href="equipe.html" class="equipe-link2 ancora-header">Equipe</a>
+                </li>
+    
+                <!-- Dropdown -->
+                <li class="dropdown">
+                  <a href="#" class="dropdown-link">Caminhos Culturais para Todos</a>
+                  <ul class="dropdown-menu">
+                      <ul class="dropdown-menu">
+                          <li><a href="videos-caminhos-culturais.html">Vídeos Caminhos Culturais</a></li>
+                          <li><a href="reels-com-audiodescricao.html">Reels com audiodescrição</a></li>
+                      </ul>
+                  </ul>
+                </li>
+    
+                <li>
+                  <a href="default.html" class="contato-link2 ancora-header">Contato</a>
+                </li>
+    
+                <li>
+                  <a class="mapa-link" href="http://umap.openstreetmap.fr/pt-pt/map/mapa-cultural_634062#15/-12.9613/-38.5019" target="_blank" class="ancora-header">Mapa</a>
+                </li>
+                
+
+                <li><div id="portal-searchbox"></div></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="page-header">
+        <div class="page-nav"></div>
+    </div>
+    
+    <div class="content">
+        <section id="projects" class="containerv">
+            <h2>&nbsp;&nbsp;&nbsp;Vídeos dos Mapas Culturais com Audiodescrição </h2>
+            <div class="projects-grid">
+
+                <div class="project">
+                        <img src="assets/capa_video_legenda/thumb-video-1.png" alt="Mapa Arquitetura">
+                        <button class="close-btn" onclick="openVideo('https://www.youtube.com/embed/L3f5XEDq3L0?si=uJ5OfiOm3R1uxkuS')">Mapa com Audiodescrição</button>
+                </div>
+
+                <div class="project">
+                    <img src="assets/capa_video_legenda/thumb-video-1.png" alt="Mapa Arte Urbana">
+                    <button class="close-btn" onclick="openVideo('https://www.youtube.com/embed/L3f5XEDq3L0?si=uJ5OfiOm3R1uxkuS')">Mapa com Audiodescrição</button>
+                </div>
+
+                <div class="project">
+                    <img src="assets/capa_video_legenda/thumb-video-1.png" alt="Conheça o mapa cultural">
+                    <button class="close-btn" onclick="openVideo('https://www.youtube.com/embed/L3f5XEDq3L0?si=uJ5OfiOm3R1uxkuS')">Mapa com Audiodescrição</button>
+                </div>
+
+                <div class="project">
+                    <img src="assets/capa_video_legenda/thumb-video-1.png" alt="Conheça o mapa cultural">
+                    <button class="close-btn" onclick="openVideo('https://www.youtube.com/embed/L3f5XEDq3L0?si=uJ5OfiOm3R1uxkuS')">Mapa com Audiodescrição</button>
+                </div>
+
+                <div class="project">
+                    <img src="assets/capa_video_legenda/thumb-video-1.png" alt="Conheça o mapa cultural">
+                    <button class="close-btn" onclick="openVideo('https://www.youtube.com/embed/L3f5XEDq3L0?si=uJ5OfiOm3R1uxkuS')">Mapa com Audiodescrição</button>
+                </div>
+
+                <div class="project">
+                    <img src="assets/capa_video_legenda/thumb-video-1.png" alt="Conheça o mapa cultural">
+                    <button class="close-btn" onclick="openVideo('https://www.youtube.com/embed/L3f5XEDq3L0?si=uJ5OfiOm3R1uxkuS')">Mapa com Audiodescrição</button>
+                </div>
+
+                <div class="project">
+                    <img src="assets/capa_video_legenda/thumb-video-1.png" alt="Conheça o mapa cultural">
+                    <button class="close-btn" onclick="openVideo('https://www.youtube.com/embed/L3f5XEDq3L0?si=uJ5OfiOm3R1uxkuS')">Mapa com Audiodescrição</button>
+                </div>
+
+                <div class="project">
+                    <img src="assets/capa_video_legenda/thumb-video-1.png" alt="Conheça o mapa cultural">
+                    <button class="close-btn" onclick="openVideo('https://www.youtube.com/embed/L3f5XEDq3L0?si=uJ5OfiOm3R1uxkuS')">Mapa com Audiodescrição</button>
+                </div>
+
+                <div class="project">
+                    <img src="assets/capa_video_legenda/thumb-video-1.png" alt="Conheça o mapa cultural">
+                    <button class="close-btn" onclick="openVideo('https://www.youtube.com/embed/L3f5XEDq3L0?si=uJ5OfiOm3R1uxkuS')">Mapa com Audiodescrição</button>
+                </div>
+
+                <div class="project">
+                    <img src="assets/capa_video_legenda/thumb-video-1.png" alt="Conheça o mapa cultural">
+                    <button class="close-btn" onclick="openVideo('https://www.youtube.com/embed/L3f5XEDq3L0?si=uJ5OfiOm3R1uxkuS')">Mapa com Audiodescrição</button>
+                </div>
+
+                <div class="project">
+                    <img src="assets/capa_video_legenda/thumb-video-1.png" alt="Conheça o mapa cultural">
+                    <button class="close-btn" onclick="openVideo('https://www.youtube.com/embed/L3f5XEDq3L0?si=uJ5OfiOm3R1uxkuS')">Mapa com Audiodescrição</button>
+                </div>
+
+                <div class="project">
+                    <img src="assets/capa_video_legenda/thumb-video-1.png" alt="Conheça o mapa cultural">
+                    <button class="close-btn" onclick="openVideo('https://www.youtube.com/embed/L3f5XEDq3L0?si=uJ5OfiOm3R1uxkuS')">Mapa com Audiodescrição</button>
+                 </div>
+
+                 <div class="project">
+                    <img src="assets/capa_video_legenda/thumb-video-1.png" alt="Conheça o mapa cultural">
+                    <button class="close-btn" onclick="openVideo('https://www.youtube.com/embed/L3f5XEDq3L0?si=uJ5OfiOm3R1uxkuS')">Mapa com Audiodescrição</button>
+                </div>
+
+                <div class="project">
+                        <img src="assets/capa_video_legenda/thumb-video-1.png" alt="Conheça o mapa cultural">
+                        <button class="close-btn" onclick="openVideo('https://www.youtube.com/embed/L3f5XEDq3L0?si=uJ5OfiOm3R1uxkuS')">Mapa com Audiodescrição</button>
+                </div>
+
+
+                <div class="project">
+                    <img src="assets/capa_video_legenda/thumb-video-1.png" alt="Conheça o mapa cultural">
+                    <button class="close-btn" onclick="openVideo('https://www.youtube.com/embed/L3f5XEDq3L0?si=uJ5OfiOm3R1uxkuS')">Mapa com Audiodescrição</button>
+                </div>
+
+                <div class="project">
+                    <img src="assets/capa_video_legenda/thumb-video-1.png" alt="Conheça o mapa cultural">
+                    <button class="close-btn" onclick="openVideo('https://www.youtube.com/embed/L3f5XEDq3L0?si=uJ5OfiOm3R1uxkuS')">Mapa com Audiodescrição</button>
+                 </div>
+            </div>
+        </section>
+
+        <!-- Container para o vídeo -->
+        <div id="video-container">
+            <iframe id="video" width="100%" height="500" frameborder="0" allowfullscreen></iframe>
+            <button class="close-btn" onclick="closeVideo()">Fechar Vídeo</button>
+        </div>
+    </div>
+</main>
+
+<div class="footer-section">
+    <footer>
+        <div class="conteudo-footer">
+            <div class="elements-footer-left">
+                <div class="logo-mapa-cultural-white">
+                    <img src="assets/logo-mapa-cultural-white.svg" alt="logo mapa cultural branco" />
+                </div>
+                <div class="logo-ifba">
+                    <a href="https://portal.ifba.edu.br/cultura" target="_blank">
+                        <img src="assets/logo-ifba.svg" alt="logo ifba" />
+                    </a>
+                </div>
+                <div class="buttons-media">
+                    <a class="img-instagram" href="https://www.instagram.com/ifba_campus_salvador/" target="_blank">
+                        <img src="assets/instagram.svg" alt="logo instagram" />
+                    </a>
+                    <a href="#" class="img-mapa">
+                        <img src="assets/placeholder.svg" alt="logo mapa" />
+                    </a>
+                </div>
+            </div>
+            <div class="elements-footer-right">
+                <div class="nav-footer">
+                    <nav>
+                        <h2>Inicio</h2>
+                        <ul>
+                            <li>
+                                <a class="home-link2-footer" href="/cultura"> Home </a>
+                            </li>
+                            <li>
+                                <a class="mapa-link2-footer" target="_blank" href="http://umap.openstreetmap.fr/pt-pt/map/mapa-cultural_634062#15/-12.9613/-38.5019"> Acesse o mapa </a>
+                            </li>
+                            <li>
+                                <a class="acervo-link2-footer" href="/cultura/acervo"> Nosso acervo </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav>
+                        <h2>Sobre nós</h2>
+                        <ul>
+                            <li>
+                                <a class="equipe-link2-footer" href="/cultura/equipe"> Nossa equipe </a>
+                            </li>
+                            <li>
+                                <a class="contato-link2-footer" href="/cultura/contato">Contato</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!--FONTE-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700&family=Open+Sans:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <!--FIM FONTE-->
+
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+        />
+        <link rel="stylesheet" href="./styles/flickity.css" />
+        <link rel="stylesheet" href="./styles/global.css" />
+        <link rel="stylesheet" href="./styles/equipe.css" />
+
+        <script src="./scripts/global.js" defer></script>
+        <script
+            src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"
+            defer
+        ></script>
+
+        <link
+            rel="shortcut icon"
+            href="./assets/favicon.ico"
+            type="image/x-icon"
+        />
+        <title>Mapa Cultural</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="conteudo-nav">
+              <a id="portal-logo" class="logo-mapa-cultural" href="#">
+                <img src="assets/logo-mapa-cultural.svg" alt="logo-mapa-cultural" />
+              </a>
+          
+              <nav>
+                <button class="mobile-menu">
+                  <div class="line1"></div>
+                  <div class="line2"></div>
+                  <div class="line3"></div>
+                </button>
+          
+                <ul class="nav-header">
+                  <li>
+                    <a href="/cultura" class="home-link2 ancora-header">Home</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/cultura/acervo" class="acervo-link2 ancora-header">Acervo</a>
+                  </li>
+      
+                  <li>
+                    <a href="/cultura/isise" class="isise-link2 ancora-header">Coletânea Isise</a>
+                  </li>
+      
+                  <li>
+                    <a href="/cultura/equipe" class="equipe-link2 ancora-header">Equipe</a>
+                  </li>
+      
+                  <!-- Dropdown -->
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-link">Caminhos Culturais para Todos</a>
+                    <ul class="dropdown-menu">
+                        <ul class="dropdown-menu">
+                            <li><a href="/cultura/videos-caminhos-culturais">Vídeos Caminhos Culturais</a></li>
+                            <li><a href="/cultura/mapas-com-audiodescricao">Mapas Caminhos Culturais com Audiodescrição</a></li>
+                            <li><a href="/cultura/reels-com-audiodescricao">Reels com audiodescrição</a></li>
+                        </ul>
+                    </ul>
+                  </li>
+      
+                  <li>
+                    <a href="/cultura/contato" class="contato-link2 ancora-header">Contato</a>
+                  </li>
+      
+                  <li>
+                    <a class="mapa-link" href="http://umap.openstreetmap.fr/pt-pt/map/mapa-cultural_634062#15/-12.9613/-38.5019" target="_blank" class="ancora-header">Mapa</a>
+                  </li>
+                  
+                  
+          
+                  <li><div id="portal-searchbox"></div></li>
+                </ul>
+              </nav>
+            </div>
+          </header>
+
+
+        <main>
+            <div class="page-header">
+                <div class="page-nav"></div>
+            </div>
+            <h1>Equipe atual</h1>
+            <section class="grid-equipe">
+              
+                <div class="membro-da-equipe">
+                    <img
+                        src="./assets/carousel-equipe/catiane-rocha.jpg"
+                        alt="catiane-rocha"
+                        class="foto-membro"
+                    />
+                    <p class="nome-membro">Catiane Rocha Passos de Souza</p>
+                    <p class="cargo-membro">Coordenadora</p>
+                    <p class="descricao-membro">
+                        Doutora pelo Programa Multidisciplinar em Cultura e
+                        Sociedade na UFBA. Cursou Doutorado Sanduíche no PPGCOM
+                        da Unisinos. Mestre em Letras e Linguística pela UFAL.
+                        Professora do IFBA - Campus Salvador. Faz parte do Grupo
+                        de Pesquisa GPEC (IFBA), onde desenvolve estudos com
+                        ênfase em Cultura, Mídia, Religião e Moral.
+                    </p>
+                    <p><strong>Audiodescrição</strong></p>
+                    <div class="audio-container">
+                        <audio id="audio" src="assets/audiodescricao/Catiane Rocha.mp4" preload="auto" controls></audio>
+                    </div>
+                </div>
+
+                <div class="membro-da-equipe">
+                    <img
+                        src="./assets/carousel-equipe/solange-moura.jpg"
+                        alt="solange-moura"
+                        class="foto-membro"
+                    />
+                    <p class="nome-membro">Solange M.S. Moura</p>
+                    <p class="cargo-membro">Pesquisadora</p>
+                    <p class="descricao-membro">
+                        Graduada em Lic. em Desenho e Plástica pela UFBA (1986),
+                        Especialista em Metodologia do Ensino Superior- IMB-RJ
+                        (1993), Mestre em Educação pela UFBA. Atualmente é
+                        professora do IFBA. Tem experiência na área de Arte
+                        Educação e Desenho, com pesquisa e projetos de formação
+                        docente, principalmente, nos temas: Arte Educação Étnico
+                        Raciais, Currículo e Desenho, Metodologia e Práticas
+                        Pedagógicas.
+                    </p>
+                    <p class="titulo"><strong>Audiodescrição</strong></p>
+                    <div class="audio-container">
+                        <audio id="audio" src="assets/audiodescricao/Solange Moura.mp4" preload="auto" controls></audio>
+                    </div>
+                </div>
+
+                 <div class="membro-da-equipe">
+                    <img
+                        src="./assets/carousel-equipe/mirella-rodrigues.jpg"
+                        alt="mirella-rodrigues"
+                        class="foto-membro"
+                    />
+                    <p class="nome-membro">Mirella Rodrigues da Cruz</p>
+                    <p class="cargo-membro">Pesquisadora</p>
+                    <p class="descricao-membro">
+                        Graduada na Lic. em Geografia do IFBA - Campus Salvador. Técnica em Administração pelo SENAC. Foi bolsista PIBID (2018-2020). Foi bolsista dos Programas Universais no Projeto de Fortalecimento Institucional dos Programas de Cotas Raciais do IFBA em (2020). Participou do Projeto de extensão Laboratório de Estudos Brasil Profundo (2020). Participa do Grupo de Pesquisa Laboratório de Estudos Brasil Profundo e do GPEC. Bolsista PIBIC AF, PIBIC, PIBIT (2020-2024).
+                    </p>
+                    <p><strong>Audiodescrição</strong></p>
+                    <div class="audio-container">
+                        <audio id="audio" src="assets/audiodescricao/Mirella.mp4" preload="auto" controls></audio>
+                    </div>
+                </div>
+
+                <div class="membro-da-equipe">
+                    <img
+                        src="./assets/carousel-equipe/leticia_rocha.png"
+                        alt="leticia_rocha"
+                        class="foto-membro"
+                    />
+                    <p class="nome-membro">Letícia Rocha Passos de Souza</p>
+                    <p class="cargo-membro">Pesquisadora</p>
+                    <p class="descricao-membro">
+                        Estudante do Curso Técnico Integrado de Refrigeração do
+                        IFBA Campus Salvador.
+                    </p>
+                    <p><strong>Audiodescrição</strong></p>
+                    <div class="audio-container">
+                        <audio id="audio" src="assets/audiodescricao/Letícia.mp4" preload="auto" controls></audio>
+                    </div>
+                </div>
+
+                <div class="membro-da-equipe">
+                    <img
+                        src="./assets/carousel-equipe/julia_vitoria.png"
+                        alt="julia_vitoria"
+                        class="foto-membro"
+                    />
+                    <p class="nome-membro">Júlia Vitória Santos de Sousa</p>
+                    <p class="cargo-membro">Pesquisadora</p>
+                    <p class="descricao-membro">
+                        Estudante do Curso Técnico Integrado de Automação do
+                        IFBA Campus Salvador. Bolsista PIBIEX-EM IFBA.
+                    </p>
+                    <p><strong>Audiodescrição</strong></p>
+                    <div class="audio-container">
+                        <audio id="audio" src="assets/audiodescricao/Júlia.mp4" preload="auto" controls></audio>
+                    </div>
+                </div>
+
+                <div class="membro-da-equipe">
+                    <img
+                        src="./assets/carousel-equipe/celio_matheus.png"
+                        alt="celio_matheus"
+                        class="foto-membro"
+                    />
+                    <p class="nome-membro">Clécio Matheus da Silva Santos</p>
+                    <p class="cargo-membro">Pesquisador</p>
+                    <p class="descricao-membro">
+                        Graduando em Engenharia Industrial Mecânica do IFBA
+                        Campus Salvador. Bolsista PIBIEX-ES IFBA.
+                    </p>
+                    <p><strong>Audiodescrição</strong></p>
+                    <div class="audio-container">
+                        <audio id="audio" src="assets/audiodescricao/Clécio.mp4" preload="auto" controls></audio>
+                    </div>
+                </div>
+
+                <div class="membro-da-equipe">
+                    <img
+                        src="./assets/carousel-equipe/pablo-vieira.jpg"
+                        alt="pablo-vieira"
+                        class="foto-membro"
+                    />
+                    <p class="nome-membro">Pablo Vieira Florentino</p>
+                    <p class="cargo-membro">Pesquisador</p>
+                    <p class="descricao-membro">
+                        Mestre em Engenharia de Sistemas e Computação pela
+                        COPPE/UFRJ, graduado em Ciência da Computação pela UFBA.
+                        Professor adjunto dos cursos superiores do IFBA, Campus
+                        Salvador, atual coordenador do curso superior de Análise
+                        e Desenvolvimento de Sistemas. Doutor em Urbanismo no
+                        PPGAU-UFBA, onde desenvolveu pesquisa multidisciplinar
+                        na área de ciência dos dados.
+                    </p>
+                    <p><strong>Audiodescrição</strong></p>
+                    <div class="audio-container">
+                        <audio id="audio" src="assets/audiodescricao/Pablo.mp4" preload="auto" controls></audio>
+                    </div>
+                </div>
+
+                <div class="membro-da-equipe">
+                    <img
+                        src="./assets/carousel-equipe/marijane-de-oliveira.jpg"
+                        alt="marijane-de-oliveira"
+                        class="foto-membro"
+                    />
+                    <p class="nome-membro">Marijane de Oliveira Correia</p>
+                    <p class="cargo-membro">Pesquisadora</p>
+                    <p class="descricao-membro">
+                        Mestre pelo Programa de Pós-graduação em Cultura e
+                        Sociedade - UFBA, Especialização em Gramática e Texto -
+                        Universidade Salvador (Unifacs) e Graduação em Letras
+                        Vernáculas pela Universidade Católica do Salvador
+                        (2002). Iniciou graduação em Dança na UFBA para realizar
+                        estudos sobre o corpo. Docente do IFBA, Campus Salvador.
+                    </p>
+                    <p><strong>Audiodescrição</strong></p>
+                    <div class="audio-container">
+                        <audio id="audio" src="assets/audiodescricao/Marijane.mp4" preload="auto" controls></audio>
+                    </div>
+                </div>
+
+                
+
+                <div class="membro-da-equipe">
+                    <img
+                        src="./assets/carousel-equipe/ana-lúcia-guia.jpg"
+                        alt="Ana Lúcia Guia"
+                        class="foto-membro"
+                    />
+                    <p class="nome-membro">Ana Lúcia Guia</p>
+                    <p class="cargo-membro">Bolsista</p>
+                    <p class="descricao-membro">
+                        Graduanda na Licenciatura em Geografia do IFBA - Campus Salvador. Bolsista de iniciação científica do CNPQ. Cursou o Curso Integrado de Geologia no IFBA - Campus Salvador. 
+                    </p>
+                    <p><strong>Audiodescrição</strong></p>
+                    <div class="audio-container">
+                        <audio id="audio" src="assets/audiodescricao/Ana Lúcia Guia.mp4" preload="auto" controls></audio>
+                    </div>
+                </div>
+
+                <div class="membro-da-equipe">
+                    <img
+                        src="./assets/carousel-equipe/maria-lucileide.jpg"
+                        alt="maria-lucileide"
+                        class="foto-membro"
+                    />
+                    <p class="nome-membro">Maria Lucileide Mota Lima</p>
+                    <p class="cargo-membro">Pesquisadora</p>
+                    <p class="descricao-membro">
+                        Doutora em Filosofia da Educação pela UFBA; Mestre em
+                        Desenvolvimento Humano e Responsabilidade Social pela
+                        CAIRU; Especialista em Recursos Humanos e em Filosofia
+                        Clínica. Professora do IFBA, pesquisadora do GPEC.
+                        Autora do livro Ser aprendiz de si mesmo: O
+                        autoconhecimento para o desenvolvimento humano nas
+                        organizações; Coautora dos livros: Entre textos, língua
+                        e ensino e Educação básica, contribuições da
+                        pós-graduação e da pesquisa.
+                    </p>
+                    <p><strong>Audiodescrição</strong></p>
+                    <div class="audio-container">
+                        <audio id="audio" src="assets/audiodescricao/Maria Lucileide.mp4" preload="auto" controls></audio>
+                    </div>
+                </div>
+
+                <div class="membro-da-equipe">
+                    <img
+                        src="./assets/carousel-equipe/nadson-silva.jpg"
+                        alt="nadson-silva"
+                        class="foto-membro"
+                    />
+                    <p class="nome-membro">Nadson Silva dos Santos</p>
+                    <p class="cargo-membro">Pesquisador</p>
+                    <p class="descricao-membro">
+                        Possui graduação em Filosofia pela Universidade Católica
+                        do Salvador (2002), graduação em Filosofia pela
+                        Universidade Católica do Salvador (2009), especialização
+                        em Educação pela Universidade do Estado da Bahia (2005)
+                        e mestrado em Filosofia pela Universidade Federal de
+                        Santa Catarina (2013). Atualmente é professor do
+                        Instituto Federal da Bahia. Tem experiência na área de
+                        Filosofia com ênfase em Filosofia, atuando
+                        principalmente nos seguintes temas: mito,
+                        esclarecimento, razão instrumental, micropoder, ética e
+                        política
+                    </p>
+                    <p><strong>Audiodescrição</strong></p>
+                    <div class="audio-container">
+                        <audio id="audio" src="assets/audiodescricao/Nadson.mp4" preload="auto" controls></audio>
+                    </div>
+                </div>
+
+                <div class="membro-da-equipe">
+                    <img
+                        src="./assets/carousel-equipe/severin-menard.jpg"
+                        alt="séverin-menard"
+                        class="foto-membro"
+                    />
+                    <p class="nome-membro">Séverin Menard</p>
+                    <p class="cargo-membro">Pesquisador</p>
+                    <p class="descricao-membro">
+                        Pesquisador Voluntário, francês, com mais de 15 anos de
+                        experiência em Geografia, Geomática e Urbanismo.
+                        Desenvolve atividades no Haiti, Brasil, Senegal, Togo,
+                        Benin, Costa do Marfim, Mali, Mauritânia, Burkina Faso,
+                        Chade, Burundi, Quênia, Madagascar, República
+                        Centro-Africana, Síria, Paquistão e Mongólia. Realiza
+                        treinamentos em ferramentas e metodologias relacionadas
+                        ao OpenStreetMap. Realizou gestão de projetos para
+                        agências da ONU, ONGs, setores privados, acadêmicos,
+                        código aberto e comunidades GIS.
+                    </p>
+                    <p><strong>Audiodescrição</strong></p>
+                    <div class="audio-container">
+                        <audio id="audio" src="assets/audiodescricao/Séverin Menard.mp4" preload="auto" controls></audio>
+                    </div>
+                </div>
+
+                <div class="membro-da-equipe">
+                    <img
+                        src="./assets/carousel-equipe/cassio-de-jesus.jpg"
+                        alt="cassio-de-jesus"
+                        class="foto-membro"
+                    />
+                    <p class="nome-membro">Cassio de Jesus Viana</p>
+                    <p class="cargo-membro">Pesquisador</p>
+                    <p class="descricao-membro">
+                        Graduado em Lic. em Geografia pelo IFBA. Foi Bolsista de
+                        IC/FAPESB do grupo de pesquisa Terra&Mar (IFBA/CNPq)
+                        durante três períodos (2016-2017; 2017-2018; 2018-2019).
+                        Foi estagiário na Divisão de Geoprocessamento (DIGEOP)
+                        da CPRM por um ano e seis meses. Atualmente é
+                        pós-graduando em Design Educacional pelo IFES. Atua
+                        principalmente nos seguintes temas: Hidrografia,
+                        Climatologia Geográfica, Geografia Urbana e
+                        Geoprocessamento.
+                    </p>
+                    <p><strong>Audiodescrição</strong></p>
+                    <div class="audio-container">
+                        <audio id="audio" src="assets/audiodescricao/Cássio.mp4" preload="auto" controls></audio>
+                    </div>
+                </div>
+
+                <div class="membro-da-equipe">
+                    <img
+                        src="./assets/carousel-equipe/kauã-dos-santos-lima.jpg"
+                        alt="Kauã dos Santos Lima"
+                        class="foto-membro"
+                    />
+                    <p class="nome-membro">Kauã dos Santos Lima</p>
+                    <p class="cargo-membro">Colaborador</p>
+                    <p class="descricao-membro">
+                        Bacharelando em Ciência da Computação pelo Instituto Federal da Bahia, IFBA, Campus Camaçari. Atuou como bolsista no projeto de pesquisa "Prática de Oficinas Interdisciplinares Caminhos Culturais: Campus Salvador e seu Entorno". Possui formação complementar em desenvolvimento de software e bancos de dados, com cursos realizados no Instituto Federal Sul-Rio-Grandense.
+                    </p>
+                    <p><strong>Audiodescrição</strong></p>
+                    <div class="audio-container">
+                        <audio id="audio" src="assets/audiodescricao/Kauã.mp4" preload="auto" controls></audio>
+                    </div>
+                </div>
+
+                <div class="membro-da-equipe">
+                    <img
+                        src="./assets/carousel-equipe/jair_souza.png"
+                        alt="jair_souza"
+                        class="foto-membro"
+                    />
+                    <p class="nome-membro">Jair Souza de Santana</p>
+                    <p class="cargo-membro">Pesquisador</p>
+                    <p class="descricao-membro">
+                        Graduando em Lic. em Geografia pelo IFBA Campus
+                        Salvador. Participa do Grupo de Pesquisa GPEC.
+                    </p>
+                    <p><strong>Audiodescrição</strong></p>
+                    <div class="audio-container">
+                        <audio id="audio" src="assets/audiodescricao/Jair.mp4" preload="auto" controls></audio>
+                    </div>
+                </div>
+
+                <div class="membro-da-equipe">
+                    <img
+                        src="./assets/carousel-equipe/evely_paranhos.png"
+                        alt="evely_paranhos"
+                        class="foto-membro"
+                    />
+                    <p class="nome-membro">Evely Paranhos Souza</p>
+                    <p class="cargo-membro">Pesquisadora</p>
+                    <p class="descricao-membro">
+                        Estudante do Curso Técnico Integrado de Automação do
+                        IFBA Campus Salvador. Participa do Grupo de Pesquisa
+                        GPEC.
+                    </p>
+                    <p><strong>Audiodescrição</strong></p>
+                    <div class="audio-container">
+                        <audio id="audio" src="assets/audiodescricao/Evely.mp4" preload="auto" controls></audio>
+                    </div>
+                </div>
+
+
+
+
+                <div class="membro-da-equipe">
+                    <img
+                        src="./assets/carousel-equipe/doriane-vasconcelos.jpg"
+                        alt="Doriane Vasconcelos"
+                        class="foto-membro"
+                    />
+                    <p class="nome-membro">Doriane Vasconcelos</p>
+                    <p class="cargo-membro">Consultora</p>
+                    <p class="descricao-membro">
+                        Graduada em Administração com especialização em Gestão de Pessoas (IFBA). Bacharelanda Interdisciplinar em Humanidades com especialização em Estudos Jurídicos (UFBA). Empregada Pública, Membra do Comitê de Diversidade, Equidade e Inclusão, Formadora, Consultora interna em Audiodescrição, Acessibilidade e Inclusão (Embasa). Co-roteirista e Consultora Técnica e Cognitiva em Audiodescrição: AD Arte Acessibilidade, IFBA, IFRJ, UFRJ, IFMT, Unesp, Fiocruz, Parada PCD, Movimento WEB Para Todos, Embasa, Disney +, Audéo Stúdio, Palavra-Chave Acessibilidade. Mentora na metodologia Emprego Apoiado com ênfase em Inclusão Empresarial (UFRB). Gestora de Projetos, Formadora, Pesquisadora Independente, Escritora, Palestrante e Criadora de Conteúdo Digital. Analista em Qualidade em Acessibilidade Digital, Cultural e Empresarial. Tester em Usabilidade Digital. Coordenadora do coletivo Consultores em Audiodescrição Brasil e+. 
+                    </p>
+                    <p><strong>Audiodescrição</strong></p>
+                    <div class="audio-container">
+                        <audio id="audio" src="assets/audiodescricao/Doriane Vasconcelos.mp4" preload="auto" controls></audio>
+                    </div>
+                </div>
+
+                
+
+                <div class="membro-da-equipe">
+                    <img
+                        src="./assets/carousel-equipe/maria-clara-fernandes.jpg"
+                        alt="Maria Clara Fernandes"
+                        class="foto-membro"
+                    />
+                    <p class="nome-membro">Maria Clara Fernandes</p>
+                    <p class="cargo-membro">Bolsista</p>
+                    <p class="descricao-membro">
+                        Estudante do Curso Integrado de Automação no IFBA-Campus Salvador. Participou da Mesa do I Seminário Articulado de Automação Industrial - AUTOMAÇÃO E SUSTENTABILIDADE (2023). Ex-aluna do sistema FIEB (SESI/SENAI), da Formação Técnica e Profissional do Novo Ensino Médio, participou da Mostra Científica e Tecnológica dentro do evento Mundo Senai, com o projeto "Catraca Inteligente" (2022). Foi monitora do evento Portas Abertas do Goethe Maker Space (2023). Participou da Olimpíada Brasileira de Química Júnior, na qual recebeu Menção Honrosa (2021). Atualmente participa do Grupo de Pesquisa de Educação, Cultura e Processos Sociais (GPEC - IFBA) como bolsista PIBIT- EM.
+                    </p>
+                    <p><strong>Audiodescrição</strong></p>
+                    <div class="audio-container">
+                        <audio id="audio" src="assets/audiodescricao/Maria Clara.mp4" preload="auto" controls></audio>
+                    </div>
+                </div>
+
+                <div class="membro-da-equipe">
+                    <img
+                        src="./assets/carousel-equipe/produtora_junior.png"
+                        alt="logo produtora junior"
+                        class="foto-membro"
+                    />
+                    <p class="nome-membro">Produtora Júnior</p>
+                    <p class="descricao-membro">
+                        A Produtora Júnior da UFBA é a primeira empresa júnior
+                        de comunicação da Bahia com duas décadas de atuação.
+                        Integra estudantes da FACOM, da Escola de Belas Artes,
+                        dos Bacharelados Interdisciplinares e de outras áreas
+                        com atuação em Comunicação Digital, Audiovisual, Criação
+                        Gráfica, Produção Cultural e Consultoria em Redes
+                        Sociais.
+                    </p>
+                    <p><strong>Audiodescrição</strong></p>
+                    <div class="audio-container">
+                        <audio id="audio" src="assets/audiodescricao/Produtora JR.mp4" preload="auto" controls></audio>
+                    </div>
+                </div>
+
+
+                <div class="membro-da-equipe">
+                    <img
+                        src="./assets/carousel-equipe/alinhavo.png"
+                        alt="logo alinhavo produções"
+                        class="foto-membro"
+                    />
+                    <p class="nome-membro">Alinhavo Produções</p>
+                    <p class="descricao-membro">
+                        Empresa Júnior da Escola de Belas Artes - UFBA. A
+                        Alinhavo é uma associação civil sem fins lucrativos,
+                        constituída e gerida exclusivamente por alunos da
+                        graduação, que objetivam colocar em prática os
+                        conhecimentos profissionais adquiridos ao longo do curso
+                        universitário.
+                    </p>
+                    <p><strong>Audiodescrição</strong></p>
+                    <div class="audio-container">
+                        <audio id="audio" src="assets/audiodescricao/Alinhavo.mp4" preload="auto" controls></audio>
+                    </div>
+                </div>
+
+
+                <div class="membro-da-equipe">
+                    <img
+                        src="./assets/carousel-equipe/infojrufba.svg"
+                        alt="logo infojúnior ufba"
+                        class="logo-info foto-membro"
+                    />
+                    <p class="nome-membro">InfoJr UFBA</p>
+                    <p class="descricao-membro">
+                        A Associação civil InfoJr UFBA foi fundada em 26 de
+                        janeiro de 1998 por um grupo de alunos do curso de
+                        ciência da computação da Universidade Federal da Bahia,
+                        sendo a primeira empresa júnior de informática do
+                        Norte/Nordeste. A empresa é composta por alunos dos
+                        cursos de Ciência da Computação, Engenharia da
+                        computação e Sistemas de Informação, que trabalham na
+                        elaboração e realização de projetos ligados a
+                        informática.
+                    </p>
+                    <p><strong>Audiodescrição</strong></p>
+                    <div class="audio-container">
+                        <audio id="audio" src="assets/audiodescricao/INFOJR.mp4" preload="auto" controls></audio>
+                    </div>
+                </div>
+
+
+                <div class="membro-da-equipe">
+                    <div
+                        class="carousel foto-membro"
+                        data-flickity='{ "wrapAround": true, "pageDots": false, "autoPlay": true, "prevNextButtons": false, "pauseAutoPlayOnHover": false }'
+                    >
+                        <div class="carousel-cell">
+                            <img
+                                src="./assets/carousel-equipe/proex.png"
+                                alt="proex"
+                            />
+                        </div>
+                        <div class="carousel-cell">
+                            <img
+                                src="./assets/carousel-equipe/prgpi.png"
+                                alt="prgpi"
+                            />
+                        </div>
+                        <div class="carousel-cell direc">
+                            <img
+                                src="./assets/carousel-equipe/direc.png"
+                                alt="direc"
+                            />
+                        </div>
+                        <div class="carousel-cell">
+                            <p><strong>DPGI IFBA - Campus Salvador</strong></p>
+                        </div>
+                        <div class="carousel-cell">
+                            <img
+                                src="./assets/carousel-equipe/fapesb.png"
+                                alt="fapesb"
+                            />
+                        </div>
+                        <div class="carousel-cell">
+                            <img
+                                src="./assets/carousel-equipe/CNPq.png"
+                                alt="CNPq"
+                            />
+                        </div>
+                    </div>
+                    <p class="nome-membro">Nossas agências de fomento</p>
+                    <p class="descricao-membro">
+                        Órgãos governamentais que financiam pesquisas e extensão
+                        por meio de auxílios para compra de material permanente,
+                        equipamentos e/ou de consumo ou concessão de bolsas para
+                        alunos/pesquisadores.
+                    </p>
+                    <p><strong>Audiodescrição</strong></p>
+                    <div class="audio-container">
+                        <h3>Pró Reitoria de Extenção</h3>
+                        <audio id="audio" src="assets/audiodescricao/PROEX.m4a" preload="auto" controls></audio>
+                        <h3>Pró Reitoria de Pesquisa, Pós-Graduação e Inovação</h3>
+                        <audio id="audio" src="assets/audiodescricao/PRPGI.m4a" preload="auto" controls></audio>
+                        <h3>Diretoria de extenção e relações comunitárias</h3>
+                        <audio id="audio" src="assets/audiodescricao/DIREC.m4a" preload="auto" controls></audio>
+                        <h3>Fundação de Amparo a Pesquisa do Estado da Bahia</h3>
+                        <audio id="audio" src="assets/audiodescricao/FAPESB.m4a" preload="auto" controls></audio>
+                        <h3>Conselho Nacional de Desenvolvimento Científico e Tecnológico</h3>
+                        <audio id="audio" src="assets/audiodescricao/CNPQ.m4a" preload="auto" controls></audio>
+                    </div>
+                </div>
+            </section>
+          
+        </main>
+        <div class="footer-section">
+            <section class="saiba-mais-footer">
+                <p>
+                    Saiba mais sobre a arquitetura do trecho que interliga
+                    Barbalho-Soledade-Lapinha
+                </p>
+                <a href="/index.html">Acesse o acervo</a>
+                <button class="btn-footer">
+                    <img src="./assets/arrow-up.svg" alt="arrow up" />
+                </button>
+            </section>
+            
+            <footer>
+                <div class="conteudo-footer">
+                    <div class="elements-footer-left">
+                        <div class="logo-mapa-cultural-white">
+                            <img
+                                src="assets/logo-mapa-cultural-white.svg"
+                                alt="logo mapa cultural branco"
+                            />
+                        </div>
+                        <div class="logo-ifba">
+                            <a
+                                href="https://portal.ifba.edu.br/cultura"
+                                target="_blank"
+                            >
+                                <img
+                                    src="assets/logo-ifba.svg"
+                                    alt="logo ifba"
+                                />
+                            </a>
+                        </div>
+                        <div class="buttons-media">
+                            <a
+                                class="img-instagram"
+                                href="https://www.instagram.com/ifba_campus_salvador/"
+                                target="_blank"
+                            >
+                                <img
+                                    src="assets/instagram.svg"
+                                    alt="logo instagram"
+                                />
+                            </a>
+
+                            <a href="#" class="img-mapa">
+                                <img
+                                    src="assets/placeholder.svg"
+                                    alt="logo mapa"
+                                />
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="elements-footer-right">
+                        <div class="nav-footer">
+              <nav>
+                <h2>Inicio</h2>
+                <ul>
+                  <li>
+                    <a class="home-link2-footer" href="/cultura"> Home </a>
+                  </li>
+                  <li>
+                    <a class="mapa-link2-footer" target="_blank" href="http://umap.openstreetmap.fr/pt-pt/map/mapa-cultural_634062#15/-12.9613/-38.5019"> Acesse o mapa </a>
+                  </li>
+                  <li>
+                    <a class="acervo-link2-footer" href="/cultura/acervo"> Nosso acervo </a>
+                  </li>
+                </ul>
+              </nav>
+              <nav>
+                <h2>Sobre nós</h2>
+                <ul>
+                  <li>
+                    <a class="equipe-link2-footer" href="/cultura/equipe"> Nossa equipe </a>
+                  </li>
+                  <li>
+                    <a class="contato-link2-footer" href="/cultura/contato">Contato</a>
+                  </li>
+                </ul>
+              </nav>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

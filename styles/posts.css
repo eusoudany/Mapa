@@ -1,0 +1,22 @@
+main {
+    font-size: 16px;
+}
+
+.page-nav {
+    font-size: 1.6rem;
+
+    display: flex;
+    gap: 8px;
+
+    padding-top: 80px;
+
+    margin-bottom: 32px;
+}
+
+.page-nav a {
+    color: inherit;
+}
+
+.page-nav a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!--FONTE-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700&family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--FIM FONTE-->
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/posts.css" />
+    <link rel="stylesheet" href="./styles/default.css" />
+    
+        <!-- Plone CSS - only for preview, will be removed in rules.xml -->
+    <link media="screen" href="styles/plone.css" type="text/css" rel="stylesheet" id="plone-css">
+
+    <!-- Theme CSS - only for preview, will be removed in rules and added in CSS registry -->
+    <link media="all" href="styles/main.css" type="text/css" rel="stylesheet" id="main-css">
+    <link media="all" href="styles/style.css" type="text/css" rel="stylesheet">
+
+    <script src="./scripts/global.js" defer></script>
+
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+
+    <title>Mapa Cultural</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="conteudo-nav">
+        <a id="portal-logo" class="logo-mapa-cultural" href="#">
+            <img
+                src="assets/logo-mapa-cultural.svg"
+                alt="logo-mapa-cultural"
+            />
+        </a>
+
+        <nav>
+          <div class="mobile-menu" tabindex="0">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+
+                    <ul class="nav-header">
+                        <li>
+                            <a href="/cultura" class="home-link2 ancora-header">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="/cultura/acervo" class="acervo-link2 ancora-header"
+                                >Acervo</a
+                            >
+                        </li>
+
+                        <li>
+                          <a href="/cultura/isise" class="isise-link2 ancora-header"
+                              >Coletânea Isise</a
+                          >
+                      </li>
+
+                        <li>
+                            <a href="/cultura/equipe" class="equipe-link2 ancora-header"
+                                >Equipe</a
+                            >
+                        </li>
+
+                        <li>
+                            <a
+                                href="/cultura/contato"
+                                class="contato-link2 ancora-header"
+                                >Contato</a
+                            >
+                        </li>
+                        
+                        <li>
+                            <a
+                                class="mapa-link"
+                                href="http://umap.openstreetmap.fr/pt-pt/map/mapa-cultural_634062#15/-12.9613/-38.5019"
+                                target="_blank"
+                                class="ancora-header"
+                                >Mapa</a
+                            >
+                        </li>
+
+                        <li><div id="portal-searchbox"></div></li>
+                    </ul>
+        </nav>
+      </div>
+    </header>
+
+
+    <main>
+        <div class="page-header">   
+          <div class="page-nav"></div>
+        </div>
+        
+        <div class="content"></div>
+    </main>
+
+
+      </section>
+
+
+    <div class="footer-section">
+        <button class="btn-footer">
+          <img src="./assets/arrow-up.svg" alt="arrow up" />
+        </button>
+      </section>
+      <footer>
+        <div class="conteudo-footer">
+          <div class="elements-footer-left">
+            <div class="logo-mapa-cultural-white">
+              <img
+                src="assets/logo-mapa-cultural-white.svg"
+                alt="logo mapa cultural branco"
+              />
+            </div>
+            <div class="logo-ifba">
+              <a href="https://portal.ifba.edu.br/cultura" target="_blank">
+                <img src="assets/logo-ifba.svg" alt="logo ifba" />
+              </a>
+            </div>
+            <div class="buttons-media">
+              <a
+                class="img-instagram"
+                href="https://www.instagram.com/ifba_campus_salvador/"
+                target="_blank"
+              >
+                <img src="assets/instagram.svg" alt="logo instagram" />
+              </a>
+
+              <a href="#" class="img-mapa">
+                <img src="assets/placeholder.svg" alt="logo mapa" />
+              </a>
+            </div>
+          </div>
+
+          <div class="elements-footer-right">
+            <div class="nav-footer">
+              <nav>
+                <h2>Inicio</h2>
+                <ul>
+                  <li>
+                    <a class="home-link2-footer" href="/cultura"> Home </a>
+                  </li>
+                  <li>
+                    <a class="mapa-link2-footer" target="_blank" href="http://umap.openstreetmap.fr/pt-pt/map/mapa-cultural_634062#15/-12.9613/-38.5019"> Acesse o mapa </a>
+                  </li>
+                  <li>
+                    <a class="acervo-link2-footer" href="/cultura/acervo"> Nosso acervo </a>
+                  </li>
+                </ul>
+              </nav>
+              <nav>
+                <h2>Sobre nós</h2>
+                <ul>
+                  <li>
+                    <a class="equipe-link2-footer" href="/cultura/equipe"> Nossa equipe </a>
+                  </li>
+                  <li>
+                    <a class="contato-link2-footer" href="/cultura/contato">Contato</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
