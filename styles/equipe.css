@@ -12,9 +12,6 @@ section {
     margin: auto;
 }
 
-section:first-of-type {
-    padding-top: 72px;
-}
 
 .titulo-da-pagina {
     font-family: 'Asap', sans-serif;
@@ -42,15 +39,23 @@ section:first-of-type {
 .grid-equipe {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 32px 40px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
 }
 
 .membro-da-equipe {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 16px;
+    justify-content: space-between;
+    height: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    
 }
 
 .membro-da-equipe p {
@@ -66,6 +71,7 @@ section:first-of-type {
 .descricao-membro {
     text-indent: 2em;
     text-align: justify;
+    flex-grow: 1; 
 }
 
 .foto-membro {
@@ -133,11 +139,13 @@ button.contact:active {
 
 /* Estilo do Container */
 .audio-container {
-    background-color: #ed7823; /* Cor de fundo */
-    padding: 20px;            /* Espaçamento interno */
-    border-radius: 10px;      /* Borda arredondada */
-    text-align: center;       /* Centraliza o conteúdo */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
+    background-color: #ed7823; 
+    padding: 20px;            
+    border-radius: 10px;      
+    text-align: center;       
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); 
+    align-self: flex-end;
+    margin-top: 15px;
   }
 
   /* Estilo do título */
@@ -149,20 +157,28 @@ button.contact:active {
   
   /* Estilo do Controles do Audio */
   audio::-webkit-media-controls-panel {
-    background-color: orange; /* Cor de fundo dos controles */
+    background-color: orange; 
   }
   
   audio::-webkit-media-controls-play-button,
   audio::-webkit-media-controls-volume-slider {
-    background-color: #ed7823; /* Cor dos botões e controle de volume */
-    border-radius: 5px;        /* Borda arredondada */
+    background-color: #ed7823; 
+    border-radius: 5px;        
   }
   
   audio::-webkit-media-controls-timeline {
-    background-color: orange; /* Cor da linha de progresso */
+    background-color: orange; 
   }
   
 
+  .titulo-equipe {
+    text-align: left;
+    margin-left: 200px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 3.5rem;
+    color: #333;
+}
 
 
 @media (min-width: 800px) {
