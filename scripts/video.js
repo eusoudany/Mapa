@@ -13,5 +13,5 @@ function closeVideo() {
 }
 
 function redirectToInstagram() {
-    window.open = ("https://www.instagram.com/mapaculturalifba/", "_blank");
+    window.open ("https://www.instagram.com/mapaculturalifba/", "_blank");
 }

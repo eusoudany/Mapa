@@ -21,17 +21,21 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 20px;
   }
   
   .project {
-    flex-basis: 30%;
+    flex-basis: 23%;
     background: #f4f4f4;
     margin-bottom: 20px;
-    padding: 10px;
+    padding: 9px;
   }
+ 
   
   .project img {
     width: 100%;
+    height: auto;
+    object-fit: cover;
   }
   
   
